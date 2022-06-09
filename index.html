@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header
+        class="position-absolute start-0 top-0 end-0 navbar navbar-expand-lg d-flex flex-nowrap align-items-center justify-content-end justify-content-md-between py-3 mb-2 px-md-5 px-2 ps-xs-0 ps-0">
+        <a href="#"></a>
+
+        <div class="row-md-3">
+            <button type="button" class="btn me-2 btn-header position-relative py-3 px-4"><img src="img/envelope.png"
+                    alt="Mail"> <span
+                    class="position-absolute top-10 end-10 translate-middle p-1 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span></button>
+            <button type="button" class="btn btn-outline-light bg-white text-dark shadow-sm"><img src="img/Clip.png"
+                    alt="avatar" sizes="45" class="me-3">Максим Добжанский</button>
+        </div>
+    </header>
+    <main class="container-fluid" role="main">
+        <div class="row flex-nowrap">
+            
+            <aside
+                class="col-auto d-flex flex-column flex-shrink-0 pt-3 px-lg-0 px-0 bg-white min-vh-100"
+                id="sidebar">
+                <a href="/" class="d-flex align-items-center mb-md-1 me-md-auto ms-3 link-dark text-decoration-none">
+                    <img src="img/logo.png" alt="Logo" class="logo-work">
+                </a>
+                <ul class="nav flex-column mb-auto mt-3">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary active" aria-current="page">
+                            <img src="img/home.png" alt="Home" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/shopping-cart.png" alt="shopping-cart" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Мои магазины</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/megaphone.png" alt="megaphone" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Промоматериалы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/pie-chart.png" alt="pie-charte" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Статистика</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/wallet.png" alt="wallet" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Баланс</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/profile.png" alt="profile" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Персональные данные</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/information.png" alt="information" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/music-and-multimedia.png" alt="music-and-multimedia" sizes="20px"
+                                class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Техподдержка</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-secondary">
+                            <img src="img/logout.png" alt="logout" sizes="20px" class="me-3">
+                            <span class="ms-1 d-none d-lg-inline">Выход</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="col px-md-5 px-2 pt-md-0 pt-5">
+                <nav style="--bs-breadcrumb-divider: '>'; " class="pt-md-3 pt-5 pb-md-5 pb-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb pt-md-0 pt-2">
+                        <li class="breadcrumb-item"><a href="#" class="link-secondary text-decoration-none">Главная</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
+                    </ol>
+                </nav>
+                <button type="button" class="btn btn-green btn-success py-2 px-3 mb-5" data-bs-toggle="modal"
+                    data-bs-target="#modalShop"><span class="text-white pe-2">+</span>Создать свой магазин</button>
+                <h2 class="fw-normal mb-5">Управление магазинами</h2>
+                <div class="px-4 pt-4 bg-white rounded shadow-sm table-responsive">
+                    <table class="table bg-white table-borderless">
+                        <thead class="align-middle">
+                            <tr>
+                                <th scope="col" class="fw-normal">№</th>
+                                <th scope="col" class="fw-normal">Название</th>
+                                <th scope="col" class="fw-normal">Адрес</th>
+                                <th scope="col" class="fw-normal">Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <th scope="row" class="fw-normal">12345</th>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td class="py-md-4 py-1">
+                                    <button type="button" class="btn btn-green btn-success py-2 px-3 mb-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                                        </svg>Редактировать</button>
+                                    <button type="button" class="btn btn-grey btn-secondary py-2 px-3 mb-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg>Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top align-middle">
+                                <th scope="row" class="fw-normal">12345</th>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td class="py-md-4 py-1">
+                                    <button type="button" class="btn btn-green btn-success py-2 px-3 mb-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                                        </svg>Редактировать</button>
+                                    <button type="button" class="btn btn-grey btn-secondary py-2 px-3 mb-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg>Редактировать</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="modal shadow-sm" id="modalShop">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-3">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Создать магазин</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-5">
+                            <div class="col">
+                                <label for="templateShop" class="mb-1">Шаблон</label>
+                                <select class="form-select" aria-label="Default select example" id="templateShop">
+                                    <option selected>Стандартный</option>
+                                    <option value="1">Стандартный 1</option>
+                                    <option value="2">Стандартный 2</option>
+                                    <option value="3">Стандартный 3</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="colorTheme" class="mb-1">Цветовая схема</label>
+                                <select class="form-select" aria-label="Default select example" id="colorTheme">
+                                    <option selected>Классическая</option>
+                                    <option value="1">Классическая 1</option>
+                                    <option value="2">Классическая 2</option>
+                                    <option value="3">Классическая 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="domenShop" class="mb-1">Домен</label>
+                        <div class="input-group mb-5">
+                            <input type="text" id="domenShop" class="form-control" placeholder="Например: ivangrozniy"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text text-white" id="basic-addon1">.work5.ru</span>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="col me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="52" height="52" viewBox="0 0 52 52">
+                                    <image id="warning" width="52" height="52"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABHNCSVQICAgIfAhkiAAAA9NJREFUaEPdml2oTlkYx+eMzAXGVzIX4mIUE2bMuVEmcnwlmVIGKeTUcGrMxRxXigtcUK5wwZSPHDEljFIkYRA5JcUwJqa4IDUjGcbHBc3w+5321j68r/e871nrNNaqX3uf9+z9rPXfz1rPs9bau66p6eIHgUoddkbDBPgShsOn0At6ZnU85fgEbsENuAxn4Fd4GaIddQEEjaUhC2EODKixUfe5bz/shtYabbTdVqugD7n3G1iReSNvwz+cnIXzcB3+gEfwOLvgY459YBh8Bl/BeOhdEKHX1sHP8F+14moRNI5KNsMXWWXPsqe7h+Mp+LfKRnTj+omwAPRyj+z+Kxy/h3PV2KtGkONgAyzJKnjIcRNsBM9DlL4YaYYfwHPLNlgGjr+KpaOCRmJpH4wAB+8OWA4PKtZQ2wX9uW09fAsGm99hLlyrZK4jgiZj5CDYz++CXeN0JcOB/t+AHbvyIHB8zoKT77JdSdBMbjb6dM9E2MeNSF1ZjJy2QXEvwDYcKteAdwnSM0czMQc4zofnXamkUNdHnP8EszNR08t5qpwgx4yh126mmHlQbfQKrd1ouDcTZfcz5L81pkoJMppdAAPAaZgWwDOGYEse6msVq6eOQQMYKMZAu+hXStBWLjI0GwCcwoQYM/m0xojV2eKYMvkaKAzpTUWDbwoyaZrpbcCkzEOdbYD3hxSkPT30C/iAnGm8Tr5FQU5nLoHdYnvmpRBiYgjSpt5ZDHbnemibJhUFGQ5Nnmb9oRAyaYb2kG03+d4EZxQmXUN7O0F6xzGzBlaHck1mJ4YgTdvOVeCY0kuvBbkEMEw70XSwhZqb5c8lliC9Y/ByQmsYb8273Bb++A52QWNg72guliBtt8Ai+BGWKshIcQ8Mh1PhxHsmaArtPQ6ml4EKctw4fsy+DrQYM4KYHnIGYQBzVlOvINcermmOwNcRvBO7y2n/MMyAZgXt5KQRVoJL3xglpodsr1sBa6FFQUY3o5x7BK57YpTYglwnuQfRFuX+5OQT+Bx+i6EGm7EFjaKOq/CXgtwnc4Y9BO68p4IG0+7b8FRB+dPrxw+hE2r+fGJ7yAT7t5UlKSi5LpdcUEgubCeXWJOb+iQ3Oe2K5UOobaxSef+t5YMXxV7gRZqAtJltgXYLPH+MvQSPJajsEtwKY26SxBK0GsMlN0msMOY2VowxVHEbK7mNRr2U1FZw3s9jbNaH7HJVbdYrKsbrlFBBoabXKVae1Auv/Gkm9UoyF5XUS+Oip5J5rZ+LSurDi1xUUp/GFMNuMh8vFUUl9XnZm0kyiQ8AS2X+/8Unmq8AZUSC5PCZO+4AAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="col-11 pt-2">
+                                В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work
+                                5.
+                                После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru).
+                                Подробнее по ссылке
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <button type="button" class="btn btn-grey btn-secondary py-2 px-5"
+                            data-bs-dismiss="modal">Отмена</button>
+                        <button type="button" class="btn btn-green btn-success py-2 px-5">Создать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

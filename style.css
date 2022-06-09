@@ -1,0 +1,61 @@
+body {
+    font-size: 14px;
+    height: 100vh;
+    background-color: #F8FAFF;
+    position: relative;
+}
+.btn-green {
+    background: #55C97B;
+    border: none;
+}
+.btn-grey {
+    background: #B1B1B1;
+    border: none;
+}
+.btn-header {
+    border: 1px solid #D4D4D4;
+}
+.btn-header img {
+    width: 22px;
+    height: 18px;
+}
+.btn-header:hover img {
+    filter: brightness(0.5);
+}
+.nav-link:hover {
+    color: #000000 !important;
+}
+.nav-item {
+    border-left: 4px solid transparent;
+}
+.nav-item:hover {
+    border-left: 4px solid #6666CC;
+}
+.nav-item:hover img {
+    filter: brightness(0.5);
+}
+table svg {
+    margin-right: 10px;
+    margin-top: -2px;
+}
+#basic-addon1 {
+    background: #6666CC;
+}
+#domenShop {
+    background: #E6E6E9;
+}
+.modal-content {
+    border: none;
+}
+.modal-header,
+.modal-footer {
+    border: none;
+}
+.modal-backdrop {
+    opacity: 0.3 !important;
+}
+@media (max-width: 992px) {
+    .logo-work {
+        width: 40px;
+    }
+}
